@@ -1,0 +1,86 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+    <link rel="stylesheet" href="new-blog.css" />
+  </head>
+  <body>
+    <div class="blog-container">
+      <div class="blog-row">
+        <div class="blog-card">
+          <a href="https://www.youtube.com/watch?v=wEfaoAa99XY" target="_blank">
+            <div class="blog-date">12 Mayıs 2023</div>
+            <h2 class="blog-title">Highlight.js ile kod bloğu nasıl eklenir?</h2>
+            <p class="blog-excerpt">
+              Lorem ipsum dolor sit amet consectetur adipisicing elit. Asperiores hic vero, ea pariatur, tempora veritatis inventore nesciunt eius harum commodi sequi optio laborum modi, debitis impedit vitae quod illo excepturi?
+            </p>
+            <div class="blog-author">Yazar Adı 1</div>
+          </a>
+         
+        </div>
+        <div class="blog-card">
+          <div class="blog-date">12 Mayıs 2023</div>
+          <h2 class="blog-title">Highlight.js ile kod bloğu nasıl eklenir?</h2>
+          <p class="blog-excerpt">
+            Lorem ipsum dolor sit amet, consectetur adipiscing elit.
+          </p>
+          <div class="blog-author">Yazar Adı 1</div>
+        </div>
+ 
+      </div>
+      <div class="blog-row">
+        <div class="blog-card">
+          <div class="blog-date">12 Mayıs 2023</div>
+          <h2 class="blog-title">Highlight.js ile kod bloğu nasıl eklenir?</h2>
+          <p class="blog-excerpt">
+            Lorem ipsum dolor sit amet, consectetur adipiscing elit.
+          </p>
+          <div class="blog-author">Yazar Adı 1</div>
+        </div>
+        <div class="blog-card">
+          <div class="blog-date">12 Mayıs 2023</div>
+          <h2 class="blog-title">Highlight.js ile kod bloğu nasıl eklenir?</h2>
+          <p class="blog-excerpt">
+            Lorem ipsum dolor sit amet, consectetur adipiscing elit.
+          </p>
+          <div class="blog-author">Yazar Adı 1</div>
+        </div>
+     
+      </div>
+
+      <div class="blog-row">
+        <div class="blog-card">
+          <div class="blog-date">12 Mayıs 2023</div>
+          <h2 class="blog-title">Highlight.js ile kod bloğu nasıl eklenir?</h2>
+          <p class="blog-excerpt">
+            Lorem ipsum dolor sit amet, consectetur adipiscing elit.
+          </p>
+          <div class="blog-author">Yazar Adı 1</div>
+        </div>
+        <div class="blog-card">
+          <div class="blog-date">12 Mayıs 2023</div>
+          <h2 class="blog-title">Highlight.js ile kod bloğu nasıl eklenir?</h2>
+          <p class="blog-excerpt">
+            Lorem ipsum dolor sit amet, consectetur adipiscing elit.
+          </p>
+          <div class="blog-author">Yazar Adı 1</div>
+        </div>
+       
+      </div>
+    </div>
+
+
+
+    <script>
+        var excerpts = document.getElementsByClassName("blog-excerpt");
+        for (var i = 0; i < excerpts.length; i++) {
+          var excerpt = excerpts[i];
+          var text = excerpt.innerHTML;
+          var truncated = text.split(" ").slice(0, 18).join(" ") + "...";
+          excerpt.innerHTML = truncated;
+        }
+      </script>
+  </body>
+</html>

@@ -1,0 +1,174 @@
+/* style.css */
+@import url("https://fonts.googleapis.com/css2?family=Poppins:wght@100;200;300;400;500;600;700&display=swap");
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: "Poppins", sans-serif;
+}
+
+:root {
+  --dark-grey: #333333;
+  --medium-grey: #636363;
+  --light-grey: #d9d9d9;
+  --ash: #f4f4f4;
+  --hover: #4e8a81;
+  --white: white;
+  --header: #ccf4f6;
+  --text2: #98c0ba;
+  --border: 1px solid var(--light-grey);
+  --shadow: rgba(0, 0, 0, 0.05) 0px 6px 24px 0px,
+    rgba(0, 0, 0, 0.08) 0px 0px 0px 1px;
+}
+
+body {
+  font-family: inherit;
+  background-color: var(--light-grey);
+  color: var(--dark-grey);
+  letter-spacing: -0.4px;
+}
+
+.blog-container {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  max-width: 75%; /* İstenilen genişliği belirleyebilirsiniz */
+  margin: 0 auto; /* Sayfanın ortasına hizalamak için */}
+
+.blog-row {
+  display: flex;
+  justify-content: space-between;
+  gap: 10px;
+  margin-bottom: 20px;
+  width: 100%;
+}
+
+.blog-card {  
+    width: calc(50% - 10px);
+    padding: 20px;
+  border: 1px solid rgba(0, 0, 0, 0.1);
+  background-color: transparent;
+  transition: background-color 0.3s ease;
+  border-radius: 10px;
+}
+
+.blog-card:hover {
+  background-color: rgba(0, 0, 0, 0.05);
+}
+
+.blog-date {
+  font-weight: 200;
+  font-size: 0.8rem;
+  color: black;
+}
+
+.blog-author {
+  font-weight: 300;
+  font-size: 0.8rem;
+  color: black;
+}
+
+.blog-title {
+  font-weight: 500;
+  font-size: 1rem;
+  color: black;
+  white-space: nowrap;
+  overflow: hidden;
+  text-overflow: ellipsis;
+}
+
+.blog-excerpt {
+  font-weight: 400;
+  font-size: 0.7rem;
+  color: black;
+  letter-spacing: 0.5px;
+  display: -webkit-box;
+  -webkit-line-clamp: 2; /* İki satırı göster */
+  -webkit-box-orient: vertical;
+  overflow: hidden;
+  text-overflow: ellipsis; /* ... eklemek */
+  -webkit-box-pack: center; /* Metni ortala */
+}
+
+@media (max-width: 1100px) {
+  .blog-container {
+    flex-wrap: wrap;
+    max-width: 100%;
+    padding: 10px;  }
+
+  .blog-row {
+    margin-bottom: 10px;
+
+  }
+
+  .blog-card {    
+    width: calc(50% - 5px);
+
+  }
+
+
+
+  .blog-title {
+    font-weight: 500;
+    font-size: 1rem;
+  }
+
+  .blog-author {
+    font-weight: 200;
+    font-size: 0.6rem;
+  }
+
+  .blog-date {
+    font-weight: 200;
+    font-size: 0.6rem;
+  }
+
+  .blog-excerpt {
+    font-weight: 300;
+    font-size: 0.8rem;
+    letter-spacing: normal;
+  }
+}
+
+@media (max-width: 768px) {
+  .blog-container {
+    flex-wrap: wrap;
+    max-width: 100%;
+    padding: 10px;
+
+  }
+
+  .blog-row {
+    flex-direction: column;
+    align-items: center;
+  }
+
+  .blog-card {
+    width: 90%;
+    height: 30%;
+  }
+
+  
+
+  .blog-title {
+    font-weight: 600;
+    font-size: 0.8rem;
+  }
+
+  .blog-author {
+    font-weight: 200;
+    font-size: 0.6rem;
+  }
+
+  .blog-date {
+    font-weight: 200;
+    font-size: 0.6rem;
+  }
+
+  .blog-excerpt {
+    font-weight: 300;
+    font-size: 0.7rem;
+    letter-spacing: normal;
+  }
+}
