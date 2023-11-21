@@ -1,0 +1,109 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="/navbar/navbar.css" />
+    <link
+      href="https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css"
+      rel="stylesheet"
+    />
+  </head>
+  <body>
+    <header id="nav-menu" aria-label="navigation bar">
+      <div class="container">
+        <div class="nav-start">
+
+          <nav class="menu">
+            <ul class="menu-bar">
+             
+              <li><a class="nav-link" href="/index.html">Anasayfa</a></li>
+              <li><a class="nav-link" href="">Hakkımda</a></li>
+              <li><a class="nav-link" href="">Projeler</a></li>
+              <li><a class="nav-link" href="/">Blog</a></li>
+
+              <li>
+                <button
+                  class="nav-link dropdown-btn"
+                  data-dropdown="dropdown2"
+                  aria-haspopup="true"
+                  aria-expanded="false"
+                  aria-label="discover"
+                >
+                  Programlama Notları
+                  <i class="bx bx-chevron-down" aria-hidden="true"></i>
+                </button>
+                <div id="dropdown2" class="dropdown">
+                  <ul role="menu">
+                    <li>
+                      <span class="dropdown-link-title">Programlama Dilleri</span>
+                    </li>
+                    <li role="menuitem">
+                      <a class="dropdown-link" href="#branding">HTML</a>
+                    </li>
+                    <li role="menuitem">
+                      <a class="dropdown-link" href="#illustrations"
+                        >CSS</a
+                      >
+                    </li>
+                 
+                    <li role="menuitem">
+                      <a class="dropdown-link" href="test.html">Python</a>
+                    </li>
+                    <li role="menuitem">
+                      <a class="dropdown-link" href="#branding">SQL</a>
+                    </li>
+              
+                </ul>
+
+                  <ul role="menu">
+                    <li>
+                      <span class="dropdown-link-title">Bilgisayar Bilimi</span>
+                    </li>
+                    <li role="menuitem">
+                      <a class="dropdown-link" href="#mac-windows"
+                        >Algoritma ve Veri Yapıları</a
+                      >
+                    </li>
+                    <li role="menuitem">
+                      <a class="dropdown-link" href="#mac-windows"
+                        >Bazı Terimler</a
+                      >
+                    </li>
+
+                    <li role="menuitem">
+                      <a class="dropdown-link" href="#linux">Yapay Zeka ve Veri Bilimi</a>
+                    </li>
+                    <li role="menuitem">
+                      <a class="dropdown-link" href="#linux">Git ve Github</a>
+                    </li>
+                    <li role="menuitem">
+                      <a class="dropdown-link" href="#linux">Terminal Kullanımı</a>
+                    </li>
+                    <li role="menuitem">
+                      <a class="dropdown-link" href="#linux">Excel</a>
+                    </li>
+                  </ul>
+
+                </div>
+              </li>
+
+            </ul>
+          </nav>
+        </div>
+        <div class="nav-end">
+          <button
+            id="hamburger"
+            aria-label="hamburger"
+            aria-haspopup="true"
+            aria-expanded="false"
+          >
+            <i class="bx bx-menu" aria-hidden="true"></i>
+          </button>
+        </div>
+      </div>
+    </header>
+    <script src="/navbar/navbar.js"></script>
+  </body>
+</html>
